@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee restaurant</title>
 
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <!-- Font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -30,10 +33,10 @@
             <a href="#about">about</a>
             <a href="#menu">menu</a>
             <a href="#review">review</a>
-            <a href="#order">order</a>
+            <a href="#book">book</a>
         </nav>
 
-        <a href="#" class="btn">book a table</a>
+        <a href="#book" class="btn">book a table</a>
 
     </header>
     <!-- header section ends -->
@@ -168,9 +171,10 @@
     <section class="review" id="review">
         <h1 class="heading">reviews <span>what people says</span></h1>
 
-        <div class="review-slider">
-            <div class="wrapper">
-                <div class="box">
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide box">
                     <i class="fas fa-quote-left"></i>
                     <i class="fas fa-quote-right"></i>
                     <img src="images/pic-1.png" alt="Pic 1">
@@ -185,11 +189,130 @@
                     <h3>john doe</h3>
                     <span>satisfied client</span>
                 </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-2.png" alt="Pic 2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, autem.</p>
+                    <h3>john doe</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-3.png" alt="Pic 3">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, autem.</p>
+                    <h3>john doe</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-4.png" alt="Pic 4">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, autem.</p>
+                    <h3>john doe</h3>
+                    <span>satisfied client</span>
+                </div>
+
             </div>
+
+            <div class="swiper-pagination"></div>
+
         </div>
     </section>
     <!-- review section ends -->
 
+    <!-- book section starts -->
+    <section class="book" id="book">
+
+        <h1 class="heading">bookings <span>reserve a table</span></h1>
+
+        <form action="">
+            <input type="text" placeholder="your name" class="box" />
+            <input type="email" placeholder="your email" class="box" />
+            <input type="number" placeholder="your number" class="box" />
+
+            <textarea name="" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="send message" class="btn" />
+        </form>
+
+    </section>
+    <!-- book section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i href="" class="fas fa-arrow-right"></i> india </a>
+                <a href="#"><i href="" class="fas fa-arrow-right"></i> USA </a>
+                <a href="#"><i href="" class="fas fa-arrow-right"></i> frances </a>
+                <a href="#"><i href="" class="fas fa-arrow-right"></i> africa </a>
+                <a href="#"><i href="" class="fas fa-arrow-right"></i> vietnam </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i href="" class="fas fa-arrow-right"></i> home </a>
+                <a href="#about"><i href="" class="fas fa-arrow-right"></i> about </a>
+                <a href="#menu"><i href="" class="fas fa-arrow-right"></i> menu </a>
+                <a href="#review"><i href="" class="fas fa-arrow-right"></i> review </a>
+                <a href="#book"><i href="" class="fas fa-arrow-right"></i> book </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i href="" class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"><i href="" class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i href="" class="fas fa-envelope"></i> osaka@gmail.com</a>
+                <a href="#"><i href="" class="fas fa-location-arrow"></i> mumbai, zimbabue</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i href="" class="fab fa-facebook"></i> facebook </a>
+                <a href="#"><i href="" class="fab fa-twitter"></i> twitter </a>
+                <a href="#"><i href="" class="fab fa-instagram"></i> instagram </a>
+                <a href="#"><i href="" class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+
+        </div>
+
+        <div class="credit">created by <a href="https://toannguyen3105.com"><span> Mr. Nguyen Huy Toan</span></a> | all
+            rights reserved</div>
+
+    </section>
+    <!-- footer section ends -->
+
+    <!-- swiper cdn link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 
     <!-- custom script file link -->
